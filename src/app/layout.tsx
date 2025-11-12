@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from './components/Header'
 import Footer from './components/Footer'
 import { Providers } from "./components/providers";
-
 const interTight = Inter_Tight({
   variable: "--font-inter-tight",
   subsets: ["latin"],
@@ -27,15 +26,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gradient-to-br from-gray-900 to-black`}>
+      <body className={`${inter.className}`}>
         <Providers>
           <Header />
-          <main className="min-h-screen">{children}</main>
-          
+          <main className="main-h-screen">{children}</main>
+          <Footer />
+
         </Providers>
-        <Footer />
       </body>
-      
     </html>
   );
 }
