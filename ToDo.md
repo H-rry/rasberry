@@ -1,0 +1,2 @@
+- finish footer and layout
+- make actual content (landing page?)
